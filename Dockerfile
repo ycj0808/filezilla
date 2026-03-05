@@ -1,5 +1,5 @@
 # 直接使用阿里云的 Alpine 镜像，无需换源
-FROM --platform=linux/arm64 alpine:latest
+FROM alpine:latest
 
 # 直接安装软件
 RUN apk add --no-cache \
