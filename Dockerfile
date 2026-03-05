@@ -1,5 +1,5 @@
 # 使用官方arm64基础镜像
-FROM lscr.io/linuxserver/filezilla:arm64v8-latest
+FROM --platform=linux/arm64 jlesage/filezilla:latest
 
 # 设置环境变量，让界面显示中文
 ENV LC_ALL=zh_CN.UTF-8
