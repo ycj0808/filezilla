@@ -2,11 +2,7 @@
 FROM alpine:latest
 
 # 直接安装软件
-RUN apk add --no-cache \
-    lftp \
-    ftp-client \
-    curl \
-    ca-certificates
+RUN apk add --no-cache lftp busybox-extras curl ca-certificates
 
 WORKDIR /data
 CMD ["/bin/sh"]
